@@ -1,0 +1,30 @@
+{{ define "main"}}
+
+	 <div class="row">
+			
+			
+	        <div class="col-md-10">
+	        
+	          <!-- the actual blog post: title/author/date/content -->
+	          <h1 class="text-justify">{{ .Title }}</h1>
+	          <p><span class="glyphicon glyphicon-user"></span> by {{ if .Params.author }} {{.Params.author}} {{else}} {{$.Site.Params.author}} {{end}} | <span class="glyphicon glyphicon-time"></span> on {{ .Date.Format "January 2, 2006"}} {{if .Params.tags }}|
+				<span class="glyphicon glyphicon-tag"></span> {{range .Params.tags}} <span class="badge">{{ . }}</span>{{end}} {{end}} </p>
+	          <hr>
+	          
+	          {{ .Content }}
+	          
+	          
+	          <!-- the comment box -->
+	          <div class="well">
+	            {{ template "_internal/disqus.html" . }}
+
+				
+				<!-- Add discuss here -->
+	            
+	          </div>
+	 </div>
+
+
+
+{{ end }}
+

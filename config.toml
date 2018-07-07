@@ -1,0 +1,32 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "My New Hugo Site"
+theme = "joe-blog"
+paginate = 6
+disqusShortname = "joejeanblog"
+
+GOOGLE_ANALYTICS ="UA-46696882-1"
+
+[params]
+	author = "Joe Jean"
+	description = " Joe Jean Website"
+
+[menu]
+
+  [[menu.main]]
+    name = "Home"
+    pre = "<i class='fa fa-heart'></i>"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "About"
+    pre = "<i class='fa fa-heart'></i>"
+    url = "/about/"
+    weight = 2
+  [[menu.main]]
+    name = "Projects"
+    pre = "<i class='fa fa-road'></i>"
+    url = "/projects/"
+    weight = 3
+
+
