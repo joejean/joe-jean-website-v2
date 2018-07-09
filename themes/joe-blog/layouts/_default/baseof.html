@@ -2,9 +2,16 @@
 <html lang="{{.Site.LanguageCode }}">
 <head>
 		{{- block "title" . }}
-            <meta name="title" content="{{ .Site.Title }}">
-            <link rel="canonical" href="{{ .Site.BaseURL }}">
-            <title> {{ .Site.Title }}</title>
+            {{if .IsPage }}
+                <meta name="title" content="{{ .Title }}">
+                <link rel="canonical" href="{{ .RelPermalink | absURL}}">
+                <title> {{ .Title }}</title>
+            {{ else }}
+                <meta name="title" content="{{ .Site.Title }}">
+                <link rel="canonical" href="{{ .Site.BaseURL }}">
+                <title> {{ .Site.Title }}</title>
+            {{ end }}
+
         {{- end }}
 
         <meta charset="utf-8">
@@ -14,16 +21,22 @@
 		<meta name="author" content="{{.Site.Author}}">
         <link href="/atom.xml" rel="alternate" type="application/rss+xml" title="Joe Jean's Blog" />
 		<meta name="robots" content="all">
-		<meta name="keywords" content="coding, python, computer science, software engineering, web development, computer programming tips, technology">
+		<meta name="keywords" content="coding, python, computer science, developer, programming, haitian programmer, software engineering, web development, computer programming tips, technology">
         <meta property="og:site_name" content="Joe Jean's Blog" /> 
 
-
+        {{ if .IsPage }}
 
         <!-- Twitter Card data -->
         <meta name="twitter:card" content="summary_large_image">
         <meta name="twitter:site" content="@joeclef509">
-       
+        <meta name="twitter:title" content="{{ .Title }}" >
+        <meta name="twitter:description" content="{{.Content | truncate 140 }}">
         
+        <!-- Open Graph Data -->
+        <meta property="og:title" content="{{ .Title }}" /> 
+        <meta property="og:description" content="{{.Content | truncate 200 }}"/>
+        
+        {{ else }}
 
         <!-- Twitter Card data -->
         <meta name="twitter:card" content="summary_large_image">
@@ -37,6 +50,7 @@
         <meta property="og:description" content="Joe Jean is a passionate Software Engineer. He holds a Bachelor of Science in Computer Science from New York University Abu Dhabi. JoeJean.net is his personal blog where he writes about life, technology and more." />
         <meta property="og:url" content="{{ .Site.BaseURL }}"/>
         <meta property="og:image" content="{{ .Site.BaseURL }}/images/joejean_social.jpg"/>
+        {{ end }}
 
 
         <link rel="stylesheet" href="{{ .Site.BaseURL }}/css/bootstrap.min.css"/>
@@ -67,10 +81,10 @@
             <div class="collapse navbar-collapse navbar-ex1-collapse">
               <ul class="nav navbar-nav pull-right">
 
-                {{ $currentPage := . }}
+                {{- $firstUrlElement := print "/" (index (split .URL "/") 1) "/" -}}
                 {{ range .Site.Menus.main }}
 
-                    <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+                    <li class="{{if or ($.IsMenuCurrent "main" .) (eq ($firstUrlElement|lower) (.URL|lower)) }}active{{end}}" title="{{ .Name }}"><a href="{{.URL}}">{{ .Name }}</a></li>
 
                 {{ end }}
                 <li><a href="{{.Site.BaseURL}}/files/Joe_Jean_Software_Engineer.pdf" target="_blank"> R&eacute;sum&eacute; </a></li>
@@ -106,7 +120,7 @@
 		</footer>
 	</div><!-- /.container -->
 
-
+        {{ template "_internal/google_analytics_async.html" . }}
 		<!-- AddThis Smart Layers BEGIN -->
 		<!-- Go to www.addthis.com/dashboard to customize your tools --> 
         <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-58bed897fcf4597c"></script> 

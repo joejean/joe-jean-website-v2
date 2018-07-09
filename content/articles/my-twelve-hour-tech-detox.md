@@ -4,7 +4,7 @@ date: 2015-09-15
 tags: ["tech", "communication"]
 slug: "12-hour-technology-detox"
 ---
-On September 13th 2015, from 12:00pm to 12:00am I was on a technology detox , i.e. I was not allowed to use any electronic communication devices. The following is an account of how I spent those twelve hours.<!-- PELICAN_END_SUMMARY --> 
+On September 13th 2015, from 12:00pm to 12:00am I was on a technology detox , i.e. I was not allowed to use any electronic communication devices. The following is an account of how I spent those twelve hours. 
 
 Before starting my 12-hour technology detox, I had to warn my friends and family about it. I felt the need to do so because I usually reply quickly to emails and instant messages except when I'm traveling. And I did not want anyone to start panicking when, suddenly, I become unreachable for 12 straight hours. 
 

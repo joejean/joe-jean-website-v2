@@ -1,6 +1,6 @@
 <div class="row">
         <div class="col-md-10">
-            {{ $paginator := .Paginator }}
+            {{ $paginator := .Paginate (where .Data.Pages "Type" "articles") }}
             {{ range $paginator.Pages }}
                     <div class="panel panel-primary">
                         
@@ -19,11 +19,11 @@
         <div class="col-md-10">
             <ul class="pager">
                 {{ if $paginator.HasPrev }}
-                    <li class="previous"><a href="{{ trim .Site.BaseURL "/" }}{{ $paginator.Prev.URL }}">&larr; Newer</a></li>
+                    <li class="previous"><a href="{{ trim .Site.BaseURL "/" }}{{ $paginator.Prev.URL }}">&larr; Newer</a></li> 
                 {{ end }}
 
                 <span class="label label-primary">Page {{ $paginator.PageNumber }} of {{ $paginator.TotalPages }}</span>
-                
+
                 {{ if $paginator.HasNext }}
                    <li class="next"> <a href="{{ trim .Site.BaseURL "/" }}{{ $paginator.Next.URL }}">Older &rarr;</a></li>
                 {{ end }}

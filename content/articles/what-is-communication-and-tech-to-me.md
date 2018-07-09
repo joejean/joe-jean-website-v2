@@ -5,8 +5,7 @@ tags: ["tech", "communication"]
 slug: "on-communication-and-technology"
 ---
 
-As human beings we have a natural need to communicate with one another. In order to do so, we use different tools. Such tools include language, gestures, drums, computers,
-<!-- PELICAN_END_SUMMARY --> cellphones etc...
+As human beings we have a natural need to communicate with one another. In order to do so, we use different tools. Such tools include language, gestures, drums, computers, cellphones etc...
 To me all those tools that facilitate communication among humans are technologies. In a more general sense, a technology is anything that improves the life of humans. 
 
 In the first chapter of the book *"The Information"* by James Gleick we see how the same technology can be used differently in different cultures. The author tells how the drum is used in sub-Saharan Africa as a tool to share information --many sentences-- over a long distance. But this was a big surprise to Europeans who were living in sub-Saharan Africa at the time. In their culture the best they could do with the drum was transferring a set of one-word long messages such as *attack, retreat...*. This anecdote reminds me of how versatile a technological tool can be. How a certain technology is used is up to the creativity and imagination of whoever is using it. This makes me wonder, do we, as humans, always use technology in way that makes us better? 

@@ -12,7 +12,7 @@ Why did I pick Stack Exchange Expatriates? Well, I wanted to pick something non 
 
 After signing up for Stack Exchange Expatriates and as I was going through the questions I saw a rather simple question which nobody had answered yet. The question which you can see in the screen shot below looked somewhat simple to me. Simple in the sense that a Google search would have revealed the answer. So I decided to try to answer it. 
 
-<img src ="{filename}/images/stackexchange.png" class="img-responsive img-rounded" />
+<img src ="/images/stackexchange.png" class="img-responsive img-rounded" />
 
 I naturally went ahead and tried two or three Google queries until I stumbled upon an [article](http://www.h1bwiki.com/h-1b-amendment-requirements/), on a website specialized in H1B information, that has the answer to the question. At this point I paused for a while to think about the credibility of the source of the information. I did that because according to my experience, there is a lot of false information on the WEB especially when it comes to those specialized topics. Among other things, I checked the comments at the bottom of the article and most commenters except one seemed to validate the correctness of the information provided in the article. But can those users also be trusted? I had no answer to that. 
 
