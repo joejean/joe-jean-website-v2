@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Job on Joe Jean | Software Engineer</title>
+    <link>https://www.joejean.net/tags/job/</link>
+    <description>Recent content in Job on Joe Jean | Software Engineer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 28 Jul 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.joejean.net/tags/job/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>My First Two Weeks At Namshi</title>
+      <link>https://www.joejean.net/articles/my-first-two-weeks-at-namshi/</link>
+      <pubDate>Thu, 28 Jul 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.joejean.net/articles/my-first-two-weeks-at-namshi/</guid>
+      <description>On July 10th, I joined Namshi as a Junior Software Engineer. I was really excited to start my first full time job writing software. Though, I have to confess that I was also a bit afraid and nervous. Fortunately, after just two days working with the team the fear and nervousness went away. In this post, I will share with you some of the things I have learned so far as well as what I love about working in this awesome team.</description>
+    </item>
+    
+  </channel>
+</rss>

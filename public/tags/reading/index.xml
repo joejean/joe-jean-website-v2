@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Reading on Joe Jean | Software Engineer</title>
+    <link>https://www.joejean.net/tags/reading/</link>
+    <description>Recent content in Reading on Joe Jean | Software Engineer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 20 Jun 2014 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.joejean.net/tags/reading/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>My method for finding the best books on any topic of</title>
+      <link>https://www.joejean.net/articles/my-method-for-finding-the-best-books-on-any-topic/</link>
+      <pubDate>Fri, 20 Jun 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.joejean.net/articles/my-method-for-finding-the-best-books-on-any-topic/</guid>
+      <description>I recently read an article about the importance of Computational Thinking. It is important because it helps you think about ways you can use computers to solve problems &amp;ndash; something that the knowledge of a programming language&amp;rsquo;s syntax does not necessarily provide. So, I decided to read a good book about the subject. But first, I had to find the book. In what follows, I will explain how I went about finding a great Computational Thinking book using Amazon and users&amp;rsquo; feedback.</description>
+    </item>
+    
+  </channel>
+</rss>

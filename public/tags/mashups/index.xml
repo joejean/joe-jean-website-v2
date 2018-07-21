@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mashups on Joe Jean | Software Engineer</title>
+    <link>https://www.joejean.net/tags/mashups/</link>
+    <description>Recent content in Mashups on Joe Jean | Software Engineer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 13 Dec 2014 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.joejean.net/tags/mashups/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>[Mashups Class] My Final Project</title>
+      <link>https://www.joejean.net/articles/my-final-project/</link>
+      <pubDate>Sat, 13 Dec 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.joejean.net/articles/my-final-project/</guid>
+      <description>For my final project I decided to build something that I myself needed: a motivational quote API. For quite some time I had been searching the web for a quotes API and I was not able to find anything interesting, so I built one.
+I did not have any quotes. So I scraped this webpage which contains a list of 150 inspirational quotes. Then I created a database with those quotes.</description>
+    </item>
+    
+    <item>
+      <title>[Mashups Class] Ideas for Second Project</title>
+      <link>https://www.joejean.net/articles/ideas-for-second-project/</link>
+      <pubDate>Tue, 21 Oct 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.joejean.net/articles/ideas-for-second-project/</guid>
+      <description>For my second project for this class, I have two ideas. I would like to implement one during this week and work on the other when I have more free time. Okay, without further ado here they are.
+The first idea is to create an interactive map that represents the countries where the NYUAD student body hails from. To implement this idea, I would need a dataset of all the countries represented in the student body.</description>
+    </item>
+    
+    <item>
+      <title>[Mashups Class] My Favorite Class Materials So Far</title>
+      <link>https://www.joejean.net/articles/my-favorite-class-materials-so-far/</link>
+      <pubDate>Sun, 19 Oct 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.joejean.net/articles/my-favorite-class-materials-so-far/</guid>
+      <description>I can&amp;rsquo;t believe we are already in the middle of this great class, in fact one of my favorite so far. Over the past weeks, we have used a lot of great tutorials/videos and articles as learning materials for the class. All of them were really great. Below is a list of some of my favorites in no particular order.
+ Importance of Color, Font, and Icons: This article provides great tips on how to use colors, font and icons when designing.</description>
+    </item>
+    
+    <item>
+      <title>[Mashups Class] First Project: San Francisco Graffiti Explorer</title>
+      <link>https://www.joejean.net/articles/first-project-san-francisco-graffiti-explorer/</link>
+      <pubDate>Wed, 01 Oct 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.joejean.net/articles/first-project-san-francisco-graffiti-explorer/</guid>
+      <description>For my first project for the Mashups class , I built a website &amp;ndash;available here&amp;ndash; that allows the user to explore graffiti spots in San Fransisco. In this article, I&amp;rsquo;m going to provide some details on how I went about building the project.
+First of all, let me tell you some of the tools I used in this project. I used the graffiti dataset from DataSF. This data set provides information&amp;ndash;including geographic coordinates, status, and a photo when available&amp;ndash; about graffiti cases reported in the San Francisco area.</description>
+    </item>
+    
+    <item>
+      <title>[Mashups Class] How to set a default value for a function&#39;s parameter in Javascript &amp; first project idea</title>
+      <link>https://www.joejean.net/articles/how-to-set-default-value-for-function-parameter-in-javascript/</link>
+      <pubDate>Tue, 16 Sep 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.joejean.net/articles/how-to-set-default-value-for-function-parameter-in-javascript/</guid>
+      <description>This week my homework has two parts. In the first part, I have to solve the three exercises found at the end of chapter two in the book Eloquent Javascript.In the second part, I have to describe what I&amp;rsquo;m thinking about doing for my first single page app project, how the data flow might work, and what the experience of a user visiting the site would be like.
+How to set a default value for function parameter in Javascript The first exercise was to write a loop that makes seven calls to console.</description>
+    </item>
+    
+    <item>
+      <title>[Mashups Class] Playing with an open API</title>
+      <link>https://www.joejean.net/articles/playing-with-an-open-api/</link>
+      <pubDate>Fri, 05 Sep 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.joejean.net/articles/playing-with-an-open-api/</guid>
+      <description>As part of my first homework for Mashups: Creating with web API, I had to first find, post and describe an API that returns JSON data.
+Initial Plan After playing around with a couple of APIs, I decided to use the World Bank API. I like the fact that one does not need a key to make requests to this API. And I also found the documentation to be clear and useful.</description>
+    </item>
+    
+  </channel>
+</rss>

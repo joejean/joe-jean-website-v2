@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+            
+                <meta name="title" content="Continuous Integration and Continuous Delivery make life easier">
+                <link rel="canonical" href="https://www.joejean.net/articles/continuous-integration-and-continuous-delivery-make-my-life-easier/">
+                <title> Continuous Integration and Continuous Delivery make life easier</title>
+            
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Joe Jean is a passionate Software Engineer. He holds a Bachelor of Science in Computer Science from New York University Abu Dhabi. JoeJean.net is his personal blog where he writes about life, technology and more.">
+		<meta name="author" content="map[]">
+        <link href="/atom.xml" rel="alternate" type="application/rss+xml" title="Joe Jean's Blog" />
+		<meta name="robots" content="all">
+		<meta name="keywords" content="coding, python, computer science, developer, programming, haitian programmer, software engineering, web development, computer programming tips, technology">
+        <meta property="og:site_name" content="Joe Jean's Blog" /> 
+
+        
+
+        
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:site" content="@joeclef509">
+        <meta name="twitter:title" content="Continuous Integration and Continuous Delivery make life easier" >
+        <meta name="twitter:description" content="I have been hearing the terms &ldquo;continuous integration&rdquo; and &ldquo;continuous delivery&rdquo; for quite some time. However, it …">
+        
+        
+        <meta property="og:title" content="Continuous Integration and Continuous Delivery make life easier" /> 
+        <meta property="og:description" content="I have been hearing the terms &ldquo;continuous integration&rdquo; and &ldquo;continuous delivery&rdquo; for quite some time. However, it wasn&rsquo;t until last week that I decided to not only learn …"/>
+        
+        
+
+
+        <link rel="stylesheet" href="https://www.joejean.net/css/bootstrap.min.css"/>
+		<link rel="stylesheet" href="https://www.joejean.net/css/joeblog-bootstrap.css"/>
+		<link rel="stylesheet" href="https://www.joejean.net/css/font-awesome.min.css"/>
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+		<link rel="icon" href="https://www.joejean.net/images/favicon.ico" />
+
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/atelier-forest-dark.min.css">
+		
+
+</head>
+
+<body>
+	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand img-responsive" href="https://www.joejean.net"> <img src="https://www.joejean.net/images/joejeanlogo.png" class="img-responsive logo"/></a>
+            </div>
+
+            
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+              <ul class="nav navbar-nav pull-right">
+
+                    <li class="" title="Home"><a href="/">Home</a></li>
+
+                
+
+                    <li class="" title="About"><a href="/about/">About</a></li>
+
+                
+
+                    <li class="" title="Projects"><a href="/projects/">Projects</a></li>
+
+                
+                <li><a href="https://www.joejean.net/files/Joe_Jean_Software_Engineer.pdf" target="_blank"> R&eacute;sum&eacute; </a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+    <div class="container">
+
+	 <div class="row">
+			
+			
+	        <div class="col-md-10">
+	        
+	          
+	          <h1 class="text-justify">Continuous Integration and Continuous Delivery make life easier</h1>
+	          <p><span class="glyphicon glyphicon-user"></span> by  Joe Jean  | <span class="glyphicon glyphicon-time"></span> on February 28, 2015 |
+				<span class="glyphicon glyphicon-tag"></span>  <span class="badge">python</span> <span class="badge">programming</span>  </p>
+	          <hr>
+	          
+	          <p>I have been hearing the terms &ldquo;continuous integration&rdquo; and &ldquo;continuous delivery&rdquo; for quite some time. However, it wasn&rsquo;t until last week that I decided to not only learn more about them but also use them in my own projects.</p>
+
+<p>What is continuous integration? Continuous integration (CI) is a development practice where developers push code to a central repository several times a day. Every time code is pushed to the repository an automated build is run to verify that the new code did not cause any errors/bugs in the system. After the build is complete, the system will notify you whether it was successful —i.e. the system passes all the test cases— or not. CI helps avoid problems that might arise when integrating or merging code from different developers on a team or when one developer is integrating their code with existing code in the main repository.</p>
+
+<p>Continuous Delivery (CD), on the other end, automates the deployment of your new code to your production system as long as the build that ran during the integration step was successful. If the build is successful the CI/CD system will automatically pushes/deploys the code to production. If the build failed, the code won&rsquo;t be deployed to production.</p>
+
+<p>Such system makes my life, as a developer, so much easier since all I need to care about now is write code and push it to GitHub.</p>
+
+<p>So, I decided to set up a CI/CD for this blog. This was pretty easy using a platform called <a href="https://circleci.com">CircleCi</a>. They have a free plan which is just perfect for a small project like this blog.</p>
+
+<p>I also set up CI/CD for another project but this time I used a tool called Jenkins on a virtual private server (VPS) running Ubuntu. Jenkins is a popular open source CI tool. This option requires more configuration than the previous one, but it is worth trying as it gives you a better understanding of how CI/CD works. So, if you would like to give it a try, you may find <a href="http://code.tutsplus.com/tutorials/setting-up-continuous-integration-continuous-deployment-with-jenkins--cms-21511">this tutorial</a> helpful.</p>
+
+<p>Happy integrating/delivering!</p>
+
+	          
+	          
+	          
+	          <div class="well">
+	            <div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "joejeanblog" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a> 
+
+	          </div>
+	 </div>
+
+
+
+
+
+
+        <footer>
+			<div class="row">
+			  <div class="col-md-12">
+			    <hr class="btn-custom">
+                <p class="text-center center-block">
+                    <a href="https://www.facebook.com/joe.jean3"><i class="fa fa-facebook-square fa-2x"></i></a>
+                    <a href="https://ae.linkedin.com/in/joejean/"><i class="fa fa-linkedin-square fa-2x"></i></a>
+                       <a href="https://google.com/+JoeJean"><i class="fa fa-google-plus fa-2x"></i> </a>
+                       <a href="https://github.com/joejean"><i class="fa fa-github fa-2x"></i></a>
+                      <a href="mailto:joe@joejean.info"><i class="fa fa-envelope fa-2x"></i></a>
+                </p>
+				<p class="text-center center-block"> &copy; 2014-<span id="current_year"></span>
+                  
+				
+				</p>
+				<br >
+			  </div>
+			</div>
+		</footer>
+	</div>
+
+        
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-46696882-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+		
+		 
+        <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-58bed897fcf4597c"></script> 
+		<script type="text/javascript">
+		  addthis.layers({
+			'theme' : 'transparent',
+			'share' : {
+			  'position' : 'left',
+			  'numPreferredServices' : 4
+			}
+		  });
+		</script>
+		
+
+
+	
+    <script src="https://www.joejean.net/js/jquery-1.10.2.min.js"></script>
+    <script src="https://www.joejean.net/js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script>
+
+    
+	<script>hljs.initHighlightingOnLoad();</script>
+    <script type="text/javascript">
+        $('#current_year').text((new Date()).getFullYear());
+    </script>
+</body>
+</html>

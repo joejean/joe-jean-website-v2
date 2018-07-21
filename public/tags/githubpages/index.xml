@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Githubpages on Joe Jean | Software Engineer</title>
+    <link>https://www.joejean.net/tags/githubpages/</link>
+    <description>Recent content in Githubpages on Joe Jean | Software Engineer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 08 Nov 2015 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.joejean.net/tags/githubpages/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Moving My Personal Website from Heroku to Github Pages</title>
+      <link>https://www.joejean.net/articles/deploying-my-personal-website-to-github-pages/</link>
+      <pubDate>Sun, 08 Nov 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.joejean.net/articles/deploying-my-personal-website-to-github-pages/</guid>
+      <description>When I first built my personal website I deployed it to Heroku. At that time Heroku was the best option for me because it offered a free tier and it was relatively easy to use. But one thing I did not like about it was that the application dyno&amp;mdash;the container that handles all the HTTP traffic to the site&amp;mdash; would go to sleep if my website receives no traffic in a 30-minute period.</description>
+    </item>
+    
+  </channel>
+</rss>

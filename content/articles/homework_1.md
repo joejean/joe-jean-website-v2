@@ -25,53 +25,53 @@ After doing some research about the issue, I found out that  the problem was due
 ### Second Plan
 So since the World Bank API was not doing the job, I did some more research and found another open&mdash;authentication free&mdash; API: The US government jobs API.
 I use the following url ``` http://api.usa.gov/jobs/search.json?query=tech+jobs ```to request all open technology related positions offered by government agencies. And I got the data back, manipulated it and displayed it on an HTML page. The page can be accessed <a href="/files/mashups/hmw_1.html" target="_blank"> here. </a> And here is the JS code that does the job:
-<pre><code>
+
+<pre><code class="js">
 $(document).ready(function(){
 
+$.ajax({
 
-              $.ajax({
+    url:"http://api.usa.gov/jobs/search.json?query=tech+jobs",
+    type: "GET",
+    dataType: "jsonp",
 
-                    url:"http://api.usa.gov/jobs/search.json?query=tech+jobs",
-                    type: "GET",
-                    dataType: "jsonp",
+    success: function(data){
+      $.each(data, function(index, job){
+        // Those are for debugging purpose
+        console.log(job.position_title);
+        console.log(job.url)
+        console.log(job.locations[0]);
+        console.log(job.organization_name);
 
-                    success: function(data){
-                      $.each(data, function(index, job){
-                        // Those are for debugging purpose
-                        console.log(job.position_title);
-                        console.log(job.url)
-                        console.log(job.locations[0]);
-                        console.log(job.organization_name);
+      // The following code will add the JSON content returned by the API to the DOM
+      var tr = $('<tr/>')
+        .appendTo($('table'));
+      var td_1 = $('<td/>')
+          .appendTo(tr);
+      var td_2 = $('<td/>')
+          .appendTo(tr);
+      var aaa = $('<a/>')
+        .attr('href',job.url)
+        .attr('target','_blank')
+        .addClass('job_title')
+        .text(job.position_title)
+        .append('<br />')
+        .appendTo(td_1);
+      var employer = $('<span/>')
+          .addClass('employer')
+          .text(job.organization_name)
+          .appendTo(td_1);
+      var span_state= $('<span/>')
+          .addClass('state')
+          .text(job.locations[0])
+          .appendTo(td_2);
+      });
+    },
 
-                      // The following code will add the JSON content returned by the API to the DOM
-                      var tr = $('<tr/>')
-                        .appendTo($('table'));
-                      var td_1 = $('<td/>')
-                          .appendTo(tr);
-                      var td_2 = $('<td/>')
-                          .appendTo(tr);
-                      var aaa = $('<a/>')
-                        .attr('href',job.url)
-                        .attr('target','_blank')
-                        .addClass('job_title')
-                        .text(job.position_title)
-                        .append('<br />')
-                        .appendTo(td_1);
-                      var employer = $('<span/>')
-                          .addClass('employer')
-                          .text(job.organization_name)
-                          .appendTo(td_1);
-                      var span_state= $('<span/>')
-                          .addClass('state')
-                          .text(job.locations[0])
-                          .appendTo(td_2);
-                      });
-                    },
-
-                     error: function() {
-                        return console.log("Failed");
-                        }
-                });
+     error: function() {
+        return console.log("Failed");
+        }
+});
 
 });
 </code></pre>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tech on Joe Jean | Software Engineer</title>
+    <link>https://www.joejean.net/tags/tech/</link>
+    <description>Recent content in Tech on Joe Jean | Software Engineer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 09 Nov 2015 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.joejean.net/tags/tech/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>A small experiment on Stack Exchange Expatriate</title>
+      <link>https://www.joejean.net/articles/experiment-on-stack-exchange-expatriate/</link>
+      <pubDate>Mon, 09 Nov 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.joejean.net/articles/experiment-on-stack-exchange-expatriate/</guid>
+      <description>As a programmer I use Stack Overflow a lot. But last week one of my professors asked us to pick one of the Stack Exchange websites that we have never used before and experiment with it by using some of its features. This article is an analysis of my experience with Stack Exchange Expatriates.
+Why did I pick Stack Exchange Expatriates? Well, I wanted to pick something non technical as I already have a lot of experiences with technical forums such as Stack Overflow, Hacker News, SubReddit cscareerquestions etc.</description>
+    </item>
+    
+    <item>
+      <title>Describing some aspect of life in my hometown with three emojis</title>
+      <link>https://www.joejean.net/articles/emojis-for-cap-haitien/</link>
+      <pubDate>Mon, 28 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.joejean.net/articles/emojis-for-cap-haitien/</guid>
+      <description>I was tasked to make three conceptual emojis that describe or represent an aspect of life in your hometown. In this post I talk about the approach I followed to come up with the design.
+Firstly, I&amp;rsquo;m from Cap-Haitien which is the second city in Haiti. I was born and raised there, so I know a lot about the city.
+In order to come up with the initial emoji designs, I had to think about three things that are part of the traditions and culture of my hometown.</description>
+    </item>
+    
+    <item>
+      <title>I had a 12-hour technology detox, here is how it went</title>
+      <link>https://www.joejean.net/articles/12-hour-technology-detox/</link>
+      <pubDate>Tue, 15 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.joejean.net/articles/12-hour-technology-detox/</guid>
+      <description>On September 13th 2015, from 12:00pm to 12:00am I was on a technology detox , i.e. I was not allowed to use any electronic communication devices. The following is an account of how I spent those twelve hours.
+Before starting my 12-hour technology detox, I had to warn my friends and family about it. I felt the need to do so because I usually reply quickly to emails and instant messages except when I&amp;rsquo;m traveling.</description>
+    </item>
+    
+    <item>
+      <title>On communication and technology</title>
+      <link>https://www.joejean.net/articles/on-communication-and-technology/</link>
+      <pubDate>Tue, 08 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.joejean.net/articles/on-communication-and-technology/</guid>
+      <description>As human beings we have a natural need to communicate with one another. In order to do so, we use different tools. Such tools include language, gestures, drums, computers, cellphones etc&amp;hellip; To me all those tools that facilitate communication among humans are technologies. In a more general sense, a technology is anything that improves the life of humans.
+In the first chapter of the book &amp;ldquo;The Information&amp;rdquo; by James Gleick we see how the same technology can be used differently in different cultures.</description>
+    </item>
+    
+  </channel>
+</rss>

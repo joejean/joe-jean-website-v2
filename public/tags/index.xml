@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Joe Jean | Software Engineer</title>
+    <link>https://www.joejean.net/tags/</link>
+    <description>Recent content in Tags on Joe Jean | Software Engineer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 13 Dec 2014 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.joejean.net/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Api</title>
+      <link>https://www.joejean.net/tags/api/</link>
+      <pubDate>Sat, 13 Dec 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.joejean.net/tags/api/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Books</title>
+      <link>https://www.joejean.net/tags/books/</link>
+      <pubDate>Fri, 20 Jun 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.joejean.net/tags/books/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Codeigniter</title>
+      <link>https://www.joejean.net/tags/codeigniter/</link>
+      <pubDate>Sun, 29 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.joejean.net/tags/codeigniter/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Communication</title>
+      <link>https://www.joejean.net/tags/communication/</link>
+      <pubDate>Mon, 09 Nov 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.joejean.net/tags/communication/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Githubpages</title>
+      <link>https://www.joejean.net/tags/githubpages/</link>
+      <pubDate>Sun, 08 Nov 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.joejean.net/tags/githubpages/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Information</title>
+      <link>https://www.joejean.net/tags/information/</link>
+      <pubDate>Fri, 20 Jun 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.joejean.net/tags/information/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Javascript</title>
+      <link>https://www.joejean.net/tags/javascript/</link>
+      <pubDate>Sat, 13 Dec 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.joejean.net/tags/javascript/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Job</title>
+      <link>https://www.joejean.net/tags/job/</link>
+      <pubDate>Thu, 28 Jul 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.joejean.net/tags/job/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mashups</title>
+      <link>https://www.joejean.net/tags/mashups/</link>
+      <pubDate>Sat, 13 Dec 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.joejean.net/tags/mashups/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Namshi</title>
+      <link>https://www.joejean.net/tags/namshi/</link>
+      <pubDate>Thu, 28 Jul 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.joejean.net/tags/namshi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Pelican</title>
+      <link>https://www.joejean.net/tags/pelican/</link>
+      <pubDate>Sun, 08 Nov 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.joejean.net/tags/pelican/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Php</title>
+      <link>https://www.joejean.net/tags/php/</link>
+      <pubDate>Sun, 29 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.joejean.net/tags/php/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Programming</title>
+      <link>https://www.joejean.net/tags/programming/</link>
+      <pubDate>Sun, 29 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.joejean.net/tags/programming/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Python</title>
+      <link>https://www.joejean.net/tags/python/</link>
+      <pubDate>Sun, 08 Nov 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.joejean.net/tags/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Reading</title>
+      <link>https://www.joejean.net/tags/reading/</link>
+      <pubDate>Fri, 20 Jun 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.joejean.net/tags/reading/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Recurse Center</title>
+      <link>https://www.joejean.net/tags/recurse-center/</link>
+      <pubDate>Sun, 31 May 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.joejean.net/tags/recurse-center/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Summer2015</title>
+      <link>https://www.joejean.net/tags/summer2015/</link>
+      <pubDate>Sun, 31 May 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.joejean.net/tags/summer2015/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tech</title>
+      <link>https://www.joejean.net/tags/tech/</link>
+      <pubDate>Mon, 09 Nov 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.joejean.net/tags/tech/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Uae</title>
+      <link>https://www.joejean.net/tags/uae/</link>
+      <pubDate>Tue, 07 Jun 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.joejean.net/tags/uae/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Visualization</title>
+      <link>https://www.joejean.net/tags/visualization/</link>
+      <pubDate>Tue, 07 Jun 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.joejean.net/tags/visualization/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

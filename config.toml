@@ -1,9 +1,10 @@
-baseURL = "http://example.org/"
+baseURL = "https://www.joejean.net"
 languageCode = "en-us"
 title = "Joe Jean | Software Engineer"
 theme = "joe-blog"
 paginate = 6
 disqusShortname = "joejeanblog"
+buildDrafts = false
 
 googleAnalytics ="UA-46696882-1"
 

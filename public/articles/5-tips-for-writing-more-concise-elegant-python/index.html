@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+            
+                <meta name="title" content="5 Tips for writing more concise and elegant code in Python">
+                <link rel="canonical" href="https://www.joejean.net/articles/5-tips-for-writing-more-concise-elegant-python/">
+                <title> 5 Tips for writing more concise and elegant code in Python</title>
+            
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Joe Jean is a passionate Software Engineer. He holds a Bachelor of Science in Computer Science from New York University Abu Dhabi. JoeJean.net is his personal blog where he writes about life, technology and more.">
+		<meta name="author" content="map[]">
+        <link href="/atom.xml" rel="alternate" type="application/rss+xml" title="Joe Jean's Blog" />
+		<meta name="robots" content="all">
+		<meta name="keywords" content="coding, python, computer science, developer, programming, haitian programmer, software engineering, web development, computer programming tips, technology">
+        <meta property="og:site_name" content="Joe Jean's Blog" /> 
+
+        
+
+        
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:site" content="@joeclef509">
+        <meta name="twitter:title" content="5 Tips for writing more concise and elegant code in Python" >
+        <meta name="twitter:description" content="
+
+Last week, I was reviewing some of the first lines of code I wrote when I was learning python three years ago. While they worked, I now …">
+        
+        
+        <meta property="og:title" content="5 Tips for writing more concise and elegant code in Python" /> 
+        <meta property="og:description" content="
+
+Last week, I was reviewing some of the first lines of code I wrote when I was learning python three years ago. While they worked, I now realise that
+there are many things I could have done in a more …"/>
+        
+        
+
+
+        <link rel="stylesheet" href="https://www.joejean.net/css/bootstrap.min.css"/>
+		<link rel="stylesheet" href="https://www.joejean.net/css/joeblog-bootstrap.css"/>
+		<link rel="stylesheet" href="https://www.joejean.net/css/font-awesome.min.css"/>
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+		<link rel="icon" href="https://www.joejean.net/images/favicon.ico" />
+
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/atelier-forest-dark.min.css">
+		
+
+</head>
+
+<body>
+	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand img-responsive" href="https://www.joejean.net"> <img src="https://www.joejean.net/images/joejeanlogo.png" class="img-responsive logo"/></a>
+            </div>
+
+            
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+              <ul class="nav navbar-nav pull-right">
+
+                    <li class="" title="Home"><a href="/">Home</a></li>
+
+                
+
+                    <li class="" title="About"><a href="/about/">About</a></li>
+
+                
+
+                    <li class="" title="Projects"><a href="/projects/">Projects</a></li>
+
+                
+                <li><a href="https://www.joejean.net/files/Joe_Jean_Software_Engineer.pdf" target="_blank"> R&eacute;sum&eacute; </a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+    <div class="container">
+
+	 <div class="row">
+			
+			
+	        <div class="col-md-10">
+	        
+	          
+	          <h1 class="text-justify">5 Tips for writing more concise and elegant code in Python</h1>
+	          <p><span class="glyphicon glyphicon-user"></span> by  Joe Jean  | <span class="glyphicon glyphicon-time"></span> on March 6, 2014 |
+				<span class="glyphicon glyphicon-tag"></span>  <span class="badge">python</span> <span class="badge">programming</span>  </p>
+	          <hr>
+	          
+	          
+
+<p>Last week, I was reviewing some of the first lines of code I wrote when I was learning python three years ago. While they worked, I now realise that
+there are many things I could have done in a more elegant and concise way. Of course, when learning a new programming language one is always
+encouraged to build things from scratch, to write one&rsquo;s own functions, classes or methods to do things even when such code might already exists.</p>
+
+<p>This approach is definitely useful for a beginner. However, once one understands the basics, it is a good idea to start using code and techniques already
+provided &ndash;at least by the programming language itself. This will not only help you build things faster but also &ndash; in most cases &ndash; make your code more concise and readable.
+The following are five tips that you can start using today to make your python code more concise and elegant.</p>
+
+<h3 id="1-prefer-the-return-statement-to-evaluate-your-expression-and-return-its-result-for-you">1) Prefer the return statement to evaluate your expression and return its result for you</h3>
+
+<p>Sometimes you have a function that returns the result of an expression. Let&rsquo;s say it&rsquo;s a boolean expression, so the return value can be either
+true or false. One usually uses a  variable to store the result of the expression and then return that variable, such as this:
+<pre><code>
+def isEven(a):
+    if (a % 2)==0:
+        result = True
+    else:
+        result = False
+    return result
+</code></pre>
+However, a more elegant way to reach the same result is to put the entire expression in the return statement and it will compute and return the result of the
+expression as follow:
+<pre><code>
+def isEven(a):
+    return (a % 2)==0
+</code></pre>
+This is possible because the return statement actually returns the result of evaluating an expression. And in case you are wondering, in python numbers eveluate to themselves.</p>
+
+<h3 id="2-prefer-python-s-builtin-format-function-to-format-your-strings">2) Prefer Python&rsquo;s builtin <code>format()</code> function to format your strings</h3>
+
+<p>Imagine you have an object called &ldquo;Player&rdquo; which has attributes such has name and age. Now imagine that you have
+a function called printPlayerInfo() that prints the player&rsquo;s information. One would usually uses the plus sign (+) to concatenate the string literals with
+the string variables, such as this:
+<pre><code>
+def printPlayerInfo(Player):
+    return &ldquo;The player&rsquo;s name is &ldquo;+Player.name+&rdquo; and the player is &ldquo;+str(Player.age)+&rdquo; years old&rdquo;
+</code></pre><br />
+However, a more elegant way to do this is to use python&rsquo;s builtin format() function. Thus our function becomes:</p>
+
+<pre><code>
+def printPlayerInfo(Player):
+    return "The player Name is {Player.name} and the player is {Player.age} years old".format(Player=Player)
+</code></pre>   
+As you can see, in addittion to making your code more readable, the format function spares the programmer the extra burden of casting all numbers to strings.   
+
+### 3) Prefer a tuple instead of a temporary variable when swaping the values of two variables
+When one wants to swap the values of two variables, they usually use a third variable as a temporary storage for one of the two values. Let's imagine that 
+we want to swap the values of the variables ```currentScore``` and ```prevScore```, one usually proceed as follow:
+
+<pre><code>
+currentScore = 34
+prevScore = 23
+temp = currentScore
+currentScore = prevScore
+prevScore = temp
+</code></pre>
+
+<p>However, this can be done more elegantly using a python tuple:</p>
+
+<pre><code>
+currentScore = 34
+prevScore = 23
+(currentScore, prevScore) = (prevScore, currentScore)
+</code></pre>
+
+<h3 id="4-prefer-list-comprehension-to-create-a-new-list-out-of-an-existing-one">4) Prefer list comprehension to create a new list out of an existing one</h3>
+
+<p>Imagine that you have a list of numbers,<code>firstList</code> and you want to create a second list,<code>secondList</code>  with all the even numbers - we assume there are some- contained
+in <code>firstList</code>. Usually one would proceed as follow:</p>
+
+<pre><code>
+firstList = [2283, 4, 567, 236, 4458]
+secondList = []
+
+for val in firstList:
+    if val % 2 == 0:
+        secondList.append(val)
+        
+</code></pre>
+
+<p>However, a more elegant and pythonic way to do the same thing is to use list comprehension notation as follows:</p>
+
+<pre><code>
+firstList = [2283, 4, 567, 236, 4458]
+secondList = [ val for val in list1 if val%2 == 0]
+</code></pre>
+Well, some people might argue that the first method is more comprehensible than the second one. I would say that such a view is influenced by their knowledge of 
+other programming languages. Furthermore, list comprehension is a python specific feature which is created to make code more beautiful and concise. 
+
+### 5) Prefer the list's ```count()``` method to count the number of times an item appears on the list:
+Imagine that you have a list that has a couple of names for example. And, let's say you want to count the number of times a certain name appears on the list.
+Usually one would proceed as follow:
+
+<pre><code>
+nameList = ["aaa", "bbb", "aaa", "ccc", "ddd"]
+count =0
+for name in nameList:
+    if name == "aaa":
+        count += 1
+        
+</code></pre>
+However, to achieve the same result you can simply use python's builtin list ```count()``` method as follow:
+
+<pre><code> 
+nameList = ["aaa", "bbb", "aaa", "ccc", "ddd"]
+count = nameList.count("aaa")
+</code></pre>
+
+<p>The python list data type has more of those useful builtin methods that can not only make your life easier but aslo make your code more readable and concise.
+You can find them in the <a href = "http://docs.python.org/2/tutorial/datastructures.html#more-on-lists" target="_blank"> python documentation.</a>
+<br />
+<br />
+<br /></p>
+
+	          
+	          
+	          
+	          <div class="well">
+	            <div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "joejeanblog" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a> 
+
+	          </div>
+	 </div>
+
+
+
+
+
+
+        <footer>
+			<div class="row">
+			  <div class="col-md-12">
+			    <hr class="btn-custom">
+                <p class="text-center center-block">
+                    <a href="https://www.facebook.com/joe.jean3"><i class="fa fa-facebook-square fa-2x"></i></a>
+                    <a href="https://ae.linkedin.com/in/joejean/"><i class="fa fa-linkedin-square fa-2x"></i></a>
+                       <a href="https://google.com/+JoeJean"><i class="fa fa-google-plus fa-2x"></i> </a>
+                       <a href="https://github.com/joejean"><i class="fa fa-github fa-2x"></i></a>
+                      <a href="mailto:joe@joejean.info"><i class="fa fa-envelope fa-2x"></i></a>
+                </p>
+				<p class="text-center center-block"> &copy; 2014-<span id="current_year"></span>
+                  
+				
+				</p>
+				<br >
+			  </div>
+			</div>
+		</footer>
+	</div>
+
+        
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-46696882-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+		
+		 
+        <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-58bed897fcf4597c"></script> 
+		<script type="text/javascript">
+		  addthis.layers({
+			'theme' : 'transparent',
+			'share' : {
+			  'position' : 'left',
+			  'numPreferredServices' : 4
+			}
+		  });
+		</script>
+		
+
+
+	
+    <script src="https://www.joejean.net/js/jquery-1.10.2.min.js"></script>
+    <script src="https://www.joejean.net/js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script>
+
+    
+	<script>hljs.initHighlightingOnLoad();</script>
+    <script type="text/javascript">
+        $('#current_year').text((new Date()).getFullYear());
+    </script>
+</body>
+</html>

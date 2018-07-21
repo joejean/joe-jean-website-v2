@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+            
+                <meta name="title" content="Is your Python loop followed by an else clause? If yes, read on">
+                <link rel="canonical" href="https://www.joejean.net/articles/else-clause-in-python-loop/">
+                <title> Is your Python loop followed by an else clause? If yes, read on</title>
+            
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Joe Jean is a passionate Software Engineer. He holds a Bachelor of Science in Computer Science from New York University Abu Dhabi. JoeJean.net is his personal blog where he writes about life, technology and more.">
+		<meta name="author" content="map[]">
+        <link href="/atom.xml" rel="alternate" type="application/rss+xml" title="Joe Jean's Blog" />
+		<meta name="robots" content="all">
+		<meta name="keywords" content="coding, python, computer science, developer, programming, haitian programmer, software engineering, web development, computer programming tips, technology">
+        <meta property="og:site_name" content="Joe Jean's Blog" /> 
+
+        
+
+        
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:site" content="@joeclef509">
+        <meta name="twitter:title" content="Is your Python loop followed by an else clause? If yes, read on" >
+        <meta name="twitter:description" content="Today I decided to start my day by reading about common anti-patterns in Python and how to fix them. An anti-pattern in the context of …">
+        
+        
+        <meta property="og:title" content="Is your Python loop followed by an else clause? If yes, read on" /> 
+        <meta property="og:description" content="Today I decided to start my day by reading about common anti-patterns in Python and how to fix them. An anti-pattern in the context of programming is a piece of code that solves a problem but that has …"/>
+        
+        
+
+
+        <link rel="stylesheet" href="https://www.joejean.net/css/bootstrap.min.css"/>
+		<link rel="stylesheet" href="https://www.joejean.net/css/joeblog-bootstrap.css"/>
+		<link rel="stylesheet" href="https://www.joejean.net/css/font-awesome.min.css"/>
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+		<link rel="icon" href="https://www.joejean.net/images/favicon.ico" />
+
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/atelier-forest-dark.min.css">
+		
+
+</head>
+
+<body>
+	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand img-responsive" href="https://www.joejean.net"> <img src="https://www.joejean.net/images/joejeanlogo.png" class="img-responsive logo"/></a>
+            </div>
+
+            
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+              <ul class="nav navbar-nav pull-right">
+
+                    <li class="" title="Home"><a href="/">Home</a></li>
+
+                
+
+                    <li class="" title="About"><a href="/about/">About</a></li>
+
+                
+
+                    <li class="" title="Projects"><a href="/projects/">Projects</a></li>
+
+                
+                <li><a href="https://www.joejean.net/files/Joe_Jean_Software_Engineer.pdf" target="_blank"> R&eacute;sum&eacute; </a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+    <div class="container">
+
+	 <div class="row">
+			
+			
+	        <div class="col-md-10">
+	        
+	          
+	          <h1 class="text-justify">Is your Python loop followed by an else clause? If yes, read on</h1>
+	          <p><span class="glyphicon glyphicon-user"></span> by  Joe Jean  | <span class="glyphicon glyphicon-time"></span> on August 1, 2015 |
+				<span class="glyphicon glyphicon-tag"></span>  <span class="badge">programming</span> <span class="badge">python</span>  </p>
+	          <hr>
+	          
+	          <p>Today I decided to start my day by reading about <a href="http://docs.quantifiedcode.com/python-code-patterns/">common anti-patterns in Python</a> and how to fix them. An anti-pattern in the context of programming is a piece of code that solves a problem but that has the potential of having unintended bad consequences.</p>
+
+<p>One of those anti-patterns is the use of an else clause right after a loop without a break statement. As the article explains, the else clause following a loop is only executed when the loop sequence becomes empty. That means if the loop does not specify a break statement the else clause will always execute because eventually the loop sequence will become empty. They provided the following example code to illustrate the point:</p>
+
+<pre><code>
+def contains_magic_number(list, magic_number):
+    for i in list:
+        if i == magic_number:
+            print "This list contains the magic number."
+    else:
+        print "This list does NOT contain the magic number."
+
+contains_magic_number(range(10), 5)
+# This list contains the magic number.
+# This list does NOT contain the magic number.
+</code></pre>
+
+<p>In the snippet of code above we see that because no <code>break</code> statement was specified inside the <code>if</code> block, the <code>else</code> clause ends up being executed; which is obviously not the intended behaviour in this case. This can be fixed by adding a <code>break</code> statement in the <code>if</code> block as shown below:</p>
+
+<pre><code>
+def contains_magic_number(list, magic_number):
+for i in list:
+    if i == magic_number:
+        print "This list contains the magic number."
+else:
+    print "This list does NOT contain the magic number."
+
+contains_magic_number(range(10), 5)
+# This list contains the magic number.
+</code></pre>
+
+<p>Here because of the <code>break</code> statement the loop will print the message and exit if the magic number is found in the list, resulting in the <code>else</code> clause not being executed. So I think this is all great.</p>
+
+<p>But I was looking at the code and thinking that one could take this one step further by removing the <code>else</code> clause and making the <code>contains_magic_number()</code> function return <code>True</code> or <code>False</code> depending on whether the magic number is found in the list or not. So the code for this alternative solution would look as follow:</p>
+
+<p><pre>
+    <code>
+def contains_magic_number(list, magic_number):
+    for i in list:
+        if i == magic_number:
+            return True
+    return False</p>
+
+<p>if contains_magic_number(range(10), 5):
+    print &ldquo;This list contains the magic number.&rdquo;
+else:
+    print &ldquo;This list does NOT contain the magic number.&rdquo;</p>
+
+<p>#This list contains the magic number
+    </code>
+</pre>
+What I like about this soulution is not only that it does not contain an <code>else</code>clause but also the new <code>contains_magic_number()</code>function is more reusable. Now we can easily use that function in parts of our code where we only need to check if the list contains the magic number and do something else other than printing a message on the screen.</p>
+
+	          
+	          
+	          
+	          <div class="well">
+	            <div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "joejeanblog" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a> 
+
+	          </div>
+	 </div>
+
+
+
+
+
+
+        <footer>
+			<div class="row">
+			  <div class="col-md-12">
+			    <hr class="btn-custom">
+                <p class="text-center center-block">
+                    <a href="https://www.facebook.com/joe.jean3"><i class="fa fa-facebook-square fa-2x"></i></a>
+                    <a href="https://ae.linkedin.com/in/joejean/"><i class="fa fa-linkedin-square fa-2x"></i></a>
+                       <a href="https://google.com/+JoeJean"><i class="fa fa-google-plus fa-2x"></i> </a>
+                       <a href="https://github.com/joejean"><i class="fa fa-github fa-2x"></i></a>
+                      <a href="mailto:joe@joejean.info"><i class="fa fa-envelope fa-2x"></i></a>
+                </p>
+				<p class="text-center center-block"> &copy; 2014-<span id="current_year"></span>
+                  
+				
+				</p>
+				<br >
+			  </div>
+			</div>
+		</footer>
+	</div>
+
+        
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-46696882-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+		
+		 
+        <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-58bed897fcf4597c"></script> 
+		<script type="text/javascript">
+		  addthis.layers({
+			'theme' : 'transparent',
+			'share' : {
+			  'position' : 'left',
+			  'numPreferredServices' : 4
+			}
+		  });
+		</script>
+		
+
+
+	
+    <script src="https://www.joejean.net/js/jquery-1.10.2.min.js"></script>
+    <script src="https://www.joejean.net/js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script>
+
+    
+	<script>hljs.initHighlightingOnLoad();</script>
+    <script type="text/javascript">
+        $('#current_year').text((new Date()).getFullYear());
+    </script>
+</body>
+</html>
