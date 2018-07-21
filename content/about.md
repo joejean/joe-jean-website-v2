@@ -1,9 +1,9 @@
 ---
-type: "static"
-title: "About & Interviews"
-description: "About Sara Soueidan — Front-end web developer, author and speaker"
----
+type: static
+title: About
+description: About Joe Jean — Software Engineer and Tech Enthusiast
 
+---
 <img src ="/images/joejean.jpg" class="img-responsive img-rounded" />
 
 My name is Joe Jean. I have a Bachelor of Science degree in Computer Science from [New York University in Abu Dhabi](http://www.nyuad.nyu.edu). And I currently work at [Namshi](https://namshi.com) as a Software Engineer in Dubai. I love building software that make people's lives easier.
