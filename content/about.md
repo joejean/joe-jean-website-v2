@@ -8,7 +8,7 @@ description: About Joe Jean — Software Engineer and Tech Enthusiast
 
 My name is Joe Jean. I have a Bachelor of Science degree in Computer Science from [New York University in Abu Dhabi](http://www.nyuad.nyu.edu). And I currently work at [Namshi](https://namshi.com) as a Software Engineer in Dubai. I love building software that make people's lives easier.
 
-### Technology And I
+### Technology and I
 
 I have been in love with computers since the first time I was introduced to them: I was 14 years old. The more I use this powerful tool the more I love it
 and the more my eagerness to learn more about it. During the past few years, I have acquired some experience working in different branches of the computer industry:
