@@ -13,10 +13,7 @@ My name is Joe Jean. I have a Bachelor of Science degree in Computer Science fro
 I have been in love with computers since the first time I was introduced to them: I was 14 years old. The more I use this powerful tool the more I love it
 and the more my eagerness to learn more about it. During the past few years, I have acquired some experience working in different branches of the computer industry:
 from desktop support, to web development, application programming and telecom network operations. Furthermore, in addition to various training and seminars
-that I have attended, I studied Computer Science at [University of the People](http://www.uopeople.org) for almost two years. Thanks
-to my academic achievements there, I was offered the opportunity to apply to NYU Abu Dhabi.
-Among other branches of Computer Science, I'm really interested in Software Engineering and System Administration. And, yes, my favorite programming language is
-**Python**!
+that I have attended, I studied Computer Science at [University of the People](http://www.uopeople.org) for almost two years. Thanks to my academic achievements there, I was offered the opportunity to apply to NYU Abu Dhabi. Among other branches of Computer Science, I'm really interested in Software Engineering and System Administration. And, yes, my favorite programming language is **Python**!
 
 ### My Core Values
 
