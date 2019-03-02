@@ -28,5 +28,4 @@ When I'm not writing codes or playing with a new technology, you can find me rea
 
 ### Contact Me
 
-Please just shoot me a message at **joe.j.jean \[at\] gmail.com** and I will be glad to reply back as soon as possible. Or you can connect with me via the different social networks
-whose links are listed on the upper right part of the site. I hope to hear from you!
+Please just shoot me a message at **joe.j.jean \[at\] gmail.com** and I will be glad to reply back as soon as possible. Or you can connect with me via the different social networks whose links are listed on the upper right part of the site. I hope to hear from you!
