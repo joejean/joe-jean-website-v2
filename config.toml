@@ -1,34 +1,32 @@
 baseURL = "https://www.joejean.net"
-languageCode = "en-us"
-title = "Joe Jean | Software Engineer"
-theme = "joe-blog"
-paginate = 6
-disqusShortname = "joejeanblog"
 buildDrafts = false
-
-googleAnalytics ="UA-46696882-1"
-
+disqusShortname = "joejeanblog"
+googleAnalytics = "UA-46696882-1"
+languageCode = "en-us"
+paginate = 6
+theme = "joe-blog"
+title = "Joe Jean | Software Engineer"
+[[menu.main]]
+name = "Resume"
+url = "https://docs.google.com/document/d/110bYaCfIH5-7m2DSz8FvXWAk8HcA9fNIkYvvQl0fLXE/export?format=pdf"
+weight = 4
+[[menu.main]]
+name = "Projects"
+pre = "<i class='fa fa-road'></i>"
+url = "/projects/"
+weight = 3
+[[menu.main]]
+name = "About"
+pre = "<i class='fa fa-heart'></i>"
+url = "/about/"
+weight = 2
+[[menu.main]]
+name = "Home"
+pre = "<i class='fa fa-heart'></i>"
+url = "/"
+weight = 1
 [params]
-	author = "Joe Jean"
-	description = "Joe Jean | Software Engineer"
-
-[menu]
-
-  [[menu.main]]
-    name = "Home"
-    pre = "<i class='fa fa-heart'></i>"
-    url = "/"
-    weight = 1
-  [[menu.main]]
-    name = "About"
-    pre = "<i class='fa fa-heart'></i>"
-    url = "/about/"
-    weight = 2
-  [[menu.main]]
-    name = "Projects"
-    pre = "<i class='fa fa-road'></i>"
-    url = "/projects/"
-    weight = 3
-
+author = "Joe Jean"
+description = "Joe Jean | Software Engineer"
 [permalinks]
-  articles = "/:section/:slug/"
+articles = "/:section/:slug/"
